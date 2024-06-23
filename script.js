@@ -1,3 +1,17 @@
+window.onload = function(){
+	var x = document.getElementById("Projects")
+	var y = document.getElementById("Skills")
+	var z = document.getElementById("Contacts")
+	
+	x.style.display = "block"
+	y.style.display = "none"
+	z.style.display = "none"
+
+	document.getElementById('MenuUno').className = "active"
+	document.getElementById('MenuDos').className = "desactive"
+	document.getElementById('MenuTres').className = "desactive"
+}
+
 const typed = new Typed('.typed', {
   strings: [
     '<i class="word">Dessarrollador web</i>',
@@ -17,3 +31,4 @@ const typed = new Typed('.typed', {
 	cursorChar: '<i class="word"> |</i>', // Caracter para el cursor
 	contentType: 'html', // 'html' o 'null' para texto sin formato
 });
+
