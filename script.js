@@ -1,7 +1,7 @@
 window.onload = function(){
 	var x = document.getElementById("Projects")
 	var y = document.getElementById("Skills")
-	var z = document.getElementById("Contacts")
+	var z = document.getElementById("Contact")
 	
 	x.style.display = "block"
 	y.style.display = "none"
@@ -12,8 +12,42 @@ window.onload = function(){
 	document.getElementById('MenuTres').className = "desactive"
 }
 
+function show(param_div_id){
+	var x = document.getElementById("Projects")
+	var y = document.getElementById("Skills")
+	var z = document.getElementById("Contact")
+
+	if(param_div_id === "Projects"){
+		x.style.display = "block"
+	    y.style.display = "none"
+	    z.style.display = "none"
+
+	    document.getElementById('MenuUno').className = "active"
+	    document.getElementById('MenuDos').className = "desactive"
+	    document.getElementById('MenuTres').className = "desactive"
+	}
+	else if(param_div_id === "Skills"){
+		x.style.display = "none"
+	    y.style.display = "block"
+	    z.style.display = "none"
+
+	    document.getElementById('MenuUno').className = "desactive"
+	    document.getElementById('MenuDos').className = "active"
+	    document.getElementById('MenuTres').className = "desactive"
+	}else if(param_div_id === "Contact"){
+		x.style.display = "none"
+	    y.style.display = "none"
+	    z.style.display = "block"
+
+	    document.getElementById('MenuUno').className = "desactive"
+	    document.getElementById('MenuDos').className = "desactive"
+	    document.getElementById('MenuTres').className = "active"
+	}
+	
+}
+
 const typed = new Typed('.typed', {
-  strings: [
+    strings: [
     '<i class="word">Dessarrollador web</i>',
     '<i class="word">Dessarrollador de software</i>',
     '<i class="word">Dessarrollador estudiante</i>',

@@ -19,9 +19,9 @@ body{
     height: 80vh;
     
     border-top-left-radius: 100px;
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
-  border-bottom-left-radius: 100px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 100px;
     
     
     border: 6px solid #FF6732;
@@ -52,7 +52,7 @@ h1{
 }
 
 
- .word{
+.word{
     font-weight: bold;
     color: #FF6732;
     height: 30px;
@@ -109,6 +109,85 @@ h1{
 
 }
 
+#MenuUno{
+    padding: 14px 20px;
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0);
+    color: #00F2FF;
+    font-size: x-large;
+    border-radius: 5px;
+}
+
+#MenuUno:hover{
+    border-color: #FF6732;
+    background-color: #00F2FF;
+    color: #FF6732;
+    transition: 0.3s;
+    cursor: pointer;
+    border-bottom: #00F2FF;
+    
+}
+#MenuUno:active{
+    border-color: #00F2FF;
+    background-color: #FF6732;
+    color: #00F2FF;
+    transition: 0.1s;
+
+}
+
+#MenuDos{
+    padding: 14px 20px;
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0);
+    color: #00F2FF;
+    font-size: x-large;
+    border-radius: 5px;
+}
+
+
+#MenuDos:hover{
+    border-color: #FF6732;
+    background-color: #00F2FF;
+    color: #FF6732;
+    transition: 0.3s;
+    cursor: pointer;
+    border-bottom: #00F2FF;
+    
+}
+#MenuDos:active{
+    border-color: #00F2FF;
+    background-color: #FF6732;
+    color: #00F2FF;
+    transition: 0.1s;
+
+}
+
+#MenuTres{
+    padding: 14px 20px;
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0);
+    color: #00F2FF;
+    font-size: x-large;
+    border-radius: 5px;
+}
+
+#MenuTres:hover{
+    border-color: #FF6732;
+    background-color: #00F2FF;
+    color: #FF6732;
+    transition: 0.3s;
+    cursor: pointer;
+    border-bottom: #00F2FF;
+    
+}
+#MenuTres:active{
+    border-color: #00F2FF;
+    background-color: #FF6732;
+    color: #00F2FF;
+    transition: 0.1s;
+
+}
+
 #copyright{
     font-size: 12px;
     text-align: center;
@@ -125,21 +204,29 @@ h1{
     
     height: 80vh;
     border-top-left-radius: 0;
-  border-top-right-radius: 100px;
-  border-bottom-right-radius: 100px;
-  border-bottom-left-radius: 0;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+    border-bottom-left-radius: 0;
     
     
     
     
     border: 6px solid #00F2FF;
 }
+.Menu{
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+}
+
 .contact{
     gap: 10px;
     justify-content: center;
     font-size: 30px;
-    display: flex;
-      
+    display: flex;   
 }
 #Github{
     color: #00F2FF;
