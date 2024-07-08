@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -63,12 +63,34 @@
       
 
       <div class="Menu" id="Contact">
-        <a>alo</a>
+        <form method="post" action="DatosClientes.php">
+          <legend>Escribeme!!</legend>
+          <p>
+            <label>Nombre personal o de tu empresa:
+              <input type="text" name="nombre" />
+            </label>
+          </p>
+          <p>
+            <label>Correo de contacto:
+              <input type="text" name="email"/>
+            </label>
+          </p>
+          <p>
+            <label>Escribe tu mensaje
+              <textarea name="mensaje" cols="30" rows="5"></textarea>
+            </label>
+          </p>
+          <p>
+            <input type="submit" value="Enviar"/>
+          </p>
+        </form>
       </div>
+
     </div>
     
   </div>
 </body>
+
 <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 <script src="script.js"></script>
 </html>
