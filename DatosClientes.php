@@ -1,16 +1,30 @@
 <?php
 
-if(isset($_POST["nombre"],$_POST["email"],$_POST["mensaje"])
-and $_POST["nombre"] != "" and
-$_POST["email"] != "" and $_POST["mensaje"] != "")
-{
-    $nombre = $_POST["nombre"];
-    $email = $_POST["email"];
-    $mensaje = $_POST["mensaje"];
+include("Conexion.php");
 
-    $consulta = "INSERT INTO buzon(nombre,email,mensaje) 
-    VALUES('$nombre','$email','$mensaje')";
-}else{
-    echo'<p>Completa el formulario joder<p/>';
+
+if(isset($_POST['Enviar'])){
+
+    if(
+
+        strlen($_POST['nombre']) >= 1 &&
+        strlen($_POST['email']) >= 1 &&
+        strlen($_POST['mensaje']) >= 1 
+        
+    )
+    {
+
+        $nombre = trim($_POST['nombre']);
+        $email = trim($_POST['email']);
+        $mensaje = trim($_POST['mensaje']);
+
+        $consulta = "INSERT INTO buzon (nombre, email, mensaje)
+                    VALUE ('$nombre','$email','$mensaje')";
+
+        $resultado = mysqli_query($conn, $consulta);
+
+    }
 }
+
+
 ?>

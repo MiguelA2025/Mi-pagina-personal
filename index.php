@@ -63,33 +63,40 @@
       
 
       <div class="Menu" id="Contact">
-        <form method="post" action="DatosClientes.php">
+        <form method="post">
           <legend>Escribeme!!</legend>
           <p>
-            <label>Nombre personal o de tu empresa:
+              <label>Nombre personal o de tu empresa:
               <input type="text" name="nombre" />
-            </label>
+              </label>
           </p>
           <p>
-            <label>Correo de contacto:
+              <label>Correo de contacto:
               <input type="text" name="email"/>
-            </label>
+              </label>
           </p>
           <p>
-            <label>Escribe tu mensaje
+          <label>Escribe tu mensaje
               <textarea name="mensaje" cols="30" rows="5"></textarea>
-            </label>
+              </label>
           </p>
           <p>
-            <input type="submit" value="Enviar"/>
+              <input type="submit" value="Enviar" name="Enviar"/>
           </p>
-        </form>
+          </form>
       </div>
 
     </div>
     
   </div>
+
 </body>
+
+<?php
+
+        include("DatosClientes.php");
+
+        ?>
 
 <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 <script src="script.js"></script>
